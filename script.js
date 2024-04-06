@@ -50,3 +50,25 @@ const hide = (hideElementList, hideElementListNum) => {
         };
     });
 };
+
+// Phrases Section
+
+window.addEventListener("scroll", () => {
+    const phrasesAnimation = document.querySelectorAll(".phrases");
+
+    let phrasesClassList = [];
+    for(element of phrasesAnimation) {
+        phrasesClassList.push(element);
+    };
+
+    for (let i = 0; i < phrasesClassList.length; i++) {
+        const phrasesAnimationPosition = phrasesClassList[i].getBoundingClientRect().top;
+    const screenSize = window.innerHeight/1;
+
+    if(phrasesAnimationPosition < screenSize) {
+        phrasesAnimation[i].style = "animation: show 1s ease-out both"
+    } else {
+        phrasesAnimation[i].style = "animation: none"
+    }
+    }
+});

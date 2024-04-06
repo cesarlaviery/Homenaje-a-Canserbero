@@ -7,14 +7,4 @@ window.addEventListener("load", () => {
             next: '.discography-button--right'
         }
     });
-
-    new Glider(document.querySelector(".phrases-container"), {
-        slidesToShow: 1,
-        scrollLock: true,
-        dots: ".dots",
-        arrows: {
-            prev: '.phrases-button--left',
-            next: '.phrases-button--right'
-        }
-    });
 });
