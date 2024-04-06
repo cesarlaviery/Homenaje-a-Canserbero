@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     new Glider(document.querySelector(".discography-list"), {
         slidesToShow: 1,
         scrollLock: true,
