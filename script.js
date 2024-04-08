@@ -63,12 +63,12 @@ window.addEventListener("scroll", () => {
 
     for (let i = 0; i < phrasesClassList.length; i++) {
         const phrasesAnimationPosition = phrasesClassList[i].getBoundingClientRect().top;
-    const screenSize = window.innerHeight/1;
+    const screenSize = window.innerHeight/1.1;
 
     if(phrasesAnimationPosition < screenSize) {
         phrasesAnimation[i].style = "animation: show 1s ease-out both"
     } else {
-        phrasesAnimation[i].style = "animation: none"
+        phrasesAnimation[i].style = "animation: hide 1s ease-out both"
     }
     }
 });
