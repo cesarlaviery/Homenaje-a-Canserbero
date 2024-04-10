@@ -68,7 +68,11 @@ body {
     border-radius: 5px;
 }
 
-.important-moments--position {
+.important-moments__image--secondary {
+    display: none;
+}
+
+.important-moments--position-mobile {
     object-position: 0 80%;
 }
 
@@ -149,7 +153,7 @@ body {
     padding-bottom: 20px;
 }
 
-/* Discography Section */
+
 .information-section--relative {
     position: relative;
 }
@@ -187,7 +191,6 @@ body {
 
 .album-image__img {
     width: 220px;
-    height: 220px;
     border-radius: 5px 5px 0 0;
     position: relative;
 }
@@ -296,5 +299,76 @@ body {
         opacity: 1;
         scale: 100%;
         transform: translateX(0);
+    }
+}
+
+@media (min-width:768px) {
+
+    .header__title {
+        font-size: 2.5rem;
+    }
+
+    .important-moments-section__title {
+        font-size: 1.5rem;
+    }
+
+    .important-moments-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .important-moments__image {
+        width: 350px;
+        height: 100%;
+    }
+
+    .important-moments__image--primary {
+        display: none;
+    }
+
+    .important-moments__image--secondary {
+        display: initial;
+    }
+
+    .important-moments--position-desktop {
+        object-position: 100% 0;
+    }
+
+    .important-moments__information {
+        font-size: 0.9rem;
+        bottom: 0;
+    }
+
+    .important-moments__button {
+        font-size: 0.9rem;
+    }
+
+    .important-moments--show {
+        bottom: 0;
+    }
+
+    /* Chronology Section */
+    .chronology-list {
+        width: 60%;
+    }
+
+    /* Discography Section */
+    .album-container {
+        border: 3px solid var(--Onyx);
+        gap: 10px;
+    }
+
+    .album-image__img {
+        width: 180px;
+    }
+
+    .album-image__description {
+        width: 180px;
+    }
+
+    /* Phrase Section */
+    .phrases-container {
+        width: 60%;
     }
 }
