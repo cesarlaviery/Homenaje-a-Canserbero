@@ -215,6 +215,10 @@ body {
     letter-spacing: .03rem;
 }
 
+.album__iframe {
+    display: none;
+}
+
 .discography-list__term {
     font-size: 1.2rem;
 }
@@ -366,6 +370,11 @@ body {
     .album-image__description {
         width: 180px;
     }
+
+    .album__iframe {
+        display: initial;
+        overflow: hidden;
+    }    
 
     /* Phrase Section */
     .phrases-container {
