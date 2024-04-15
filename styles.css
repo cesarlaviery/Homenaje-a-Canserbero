@@ -56,6 +56,12 @@ body {
     padding: 10px 10px 0;
 }
 
+.important-moments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .important-moments {
     position: relative;
 }
@@ -317,7 +323,7 @@ body {
     }
 
     .important-moments-container {
-        display: flex;
+        flex-direction: row;
         justify-content: center;
         gap: 20px;
     }
@@ -373,7 +379,6 @@ body {
 
     .album__iframe {
         display: initial;
-        overflow: hidden;
     }    
 
     /* Phrase Section */
