@@ -55,18 +55,16 @@ window.addEventListener("scroll", () => {
     const phrasesAnimation = document.querySelectorAll(".phrases");
 
     let phrasesClassList = [];
-    for (element of phrasesAnimation) {
-        phrasesClassList.push(element);
-    };
+    incrementClassList(phrasesAnimation, phrasesClassList);
 
-    for (let i = 0; i < phrasesClassList.length; i++) {
-        const phrasesAnimationPosition = phrasesClassList[i].getBoundingClientRect().top;
+    phrasesClassList.forEach((element, index) => {
+        const phrasesAnimationPosition = phrasesClassList[index].getBoundingClientRect().top;
         const screenSize = window.innerHeight / 1.1;
 
         if (phrasesAnimationPosition < screenSize) {
-            phrasesAnimation[i].style = "animation: show 1s ease-out both"
+            phrasesAnimation[index].style = "animation: show 1s ease-out both"
         } else {
-            phrasesAnimation[i].style = "animation: hide 1s ease-out both"
+            phrasesAnimation[index].style = "animation: hide 1s ease-out both"
         }
-    }
+    })
 });
