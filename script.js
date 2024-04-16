@@ -59,7 +59,7 @@ window.addEventListener("scroll", () => {
 
     phrasesClassList.forEach((element, index) => {
         const phrasesAnimationPosition = phrasesClassList[index].getBoundingClientRect().top;
-        const screenSize = window.innerHeight / 1.1;
+        const screenSize = window.innerHeight / 1;
 
         if (phrasesAnimationPosition < screenSize) {
             phrasesAnimation[index].style = "animation: show 1s ease-out both"
